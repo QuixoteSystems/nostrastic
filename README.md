@@ -30,7 +30,12 @@ First of all you have to set up certains options in your Meshtastic Device and i
 # Start using Nostrastic
 1- Clone or Download this repo.
 
-2- Fill up with your own data .env file
+2- Install packages requirements:
+```shell
+pip install -r requirements.txt
+```
+
+3- Fill up with your own data *.env* file
 ```python
 ## NOSTR ###################################################################
 # Your Public Keys
@@ -62,12 +67,17 @@ PUBLISHING = 'msh/YOUR/PATH/json/mqtt/!'
 MESH_DEVICE = '12345678'
 ```
 
-3- Install packages requirements:
-```shell
-pip install -r requirements.txt
+4- Fill up with your Nostr contacts *contacts.json* file:
+```json
+{
+    "(nickname_1)":"npub...",
+    "(nickname_2)":"npub...",
+    "(nickname_3)": "npub..."
+}
 ```
-4- Run main.php
+
+5- Run main.php
 ```shell
 python3 main.py
 ```
-5- Automatically it will create nostrastic.log where you can see what is happening
+6- Automatically it will create *nostrastic.log* where you can see what is happening
