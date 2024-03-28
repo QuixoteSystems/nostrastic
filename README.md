@@ -81,3 +81,19 @@ MESH_DEVICE = '12345678'
 python3 main.py
 ```
 6- Automatically it will create *nostrastic.log* where you can see what is happening
+
+7- From your Meshtastic device:
+  - You have to go to mqtt channel and write:
+    * To send a Nostr post:
+      
+      ```(post) Your text for your nostr post. ``` *--> This will send that text like a post to your Nostr account.*
+        
+    * To send a DM to your contact (remember this nickname has to be on contacts.json):
+
+      ```(nickname_1) Hi Pleb! How are you doing?``` *--> This will send that text like a DM to your contact.*
+
+#### If you like this project, you can help by sending me some sats:
+
+  ![quixote LN wallet](https://github.com/QuixoteSystems/nostrastic/assets/82296005/709cc5d3-0e99-4e6c-80f2-8d5ddec290f2)
+
+  LN address: quixote@getalby.com
