@@ -17,11 +17,11 @@ Note: This is a first Beta version and I am still debugging and improving the co
 First of all you have to set up certains options in your Meshtastic Device and in your Meshtastic Gateway.
 - In your Meshtastic Device (with no internet):
   
-  * Add mqtt channel as secondary (IMPORTANT: name has to be mqtt in lower case)
+  * Add mqtt channel as secondary (*IMPORTANT: name has to be mqtt in lower case*)
 
 - In your Meshtastic Gateway Device (with internet):
   
-  * Add mqtt channel as secondary (IMPORTANT: name has to be mqtt in lower case)
+  * Add mqtt channel as secondary (*IMPORTANT: name has to be mqtt in lower case*)
   * In MQTT Config:
     * Enable MQTT
     * Enable JSON output
