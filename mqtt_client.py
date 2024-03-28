@@ -13,8 +13,9 @@ from pynostr.base_relay import RelayPolicy
 from pynostr.relay import Relay
 
 from dotenv import load_dotenv
-from enviroment import set_text, get_text, set_gateway_dec, set_gateway_hex, get_gateway_hex, write_info_log, write_error_log
-from nostr_messenger import NostrMessenger
+from nostrastic.enviroment import set_text, get_text, set_gateway_dec, set_gateway_hex, \
+    get_gateway_hex, write_info_log, write_error_log
+from nostrastic.nostr_messenger import NostrMessenger
 
 # take environment variables from .env
 load_dotenv()
@@ -98,7 +99,7 @@ class MqttClient:
 
         except KeyError as error:
             write_error_log(f"JSON Payload Error: {error}")
-            
+
         except Exception as error:
             write_error_log(f'Exception in on_message: {error}')
         '''

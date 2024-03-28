@@ -26,8 +26,8 @@ from pynostr.relay import Relay
 from pynostr.utils import get_public_key, get_timestamp
 
 from dotenv import load_dotenv
-from enviroment import get_text, get_gateway_dec, get_nostr_text, set_nostr_text, write_info_log, \
-    write_error_log
+from nostrastic.enviroment import get_text, get_gateway_dec, get_nostr_text, set_nostr_text, \
+    write_info_log, write_error_log
 
 
 class NostrMessenger:
@@ -83,7 +83,7 @@ class NostrMessenger:
                                 if value == sender_bech32:
                                     user = key
                                     break
-                            from mqtt_client import MqttClient
+                            from nostrastic.mqtt_client import MqttClient
                             mqtt_client = MqttClient()
                             client = mqtt_client.mqtt_connection()
                             #write_info_log(f'Connected to MQTT Server: {client.is_connected()}')
