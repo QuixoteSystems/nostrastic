@@ -3,7 +3,7 @@
 
 Bridge to publish Nostr posts and send/receive DMs over LoRa using a Meshtastic device.
 
-Note: This is a Beta version and I am still debugging and improving the code. PRs are welcomed.
+Note: This is a Beta version (Proof of Concept), so I am still debugging and improving the code. PRs are welcomed.
 
 
 # First steps
