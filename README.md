@@ -83,10 +83,10 @@ python3 main.py
 6- Automatically it will create *nostrastic.log* where you can see what is happening
 
 7- From your Meshtastic device:
-  - You have to go to mqtt channel and write:
+  - You have to go to mqtt channel and write: (post) or (nickname) following the post text or DM message:
     * To send a Nostr post:
       
-      ```(post) Your text for your nostr post. ``` *--> This will send that text like a post to your Nostr account.*
+      ```(post) This is an amazing note for all nostriches. ``` *--> This will send that text like a post to your Nostr account.*
         
     * To send a DM to your contact (remember this nickname has to be on contacts.json):
 
