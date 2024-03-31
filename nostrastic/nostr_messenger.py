@@ -64,7 +64,7 @@ class NostrMessenger:
                 if recipient:
                     sender_bech32 = recipient.bech32()
                     try:
-                        write_info_log(f"Received DM from {sender_bech32}")
+                        write_info_log(f"You received a DM from: {sender_bech32}")
                         encrypted_dm.decrypt(sender_pk.hex(), public_key_hex=recipient.hex())
                         nostr_old_text = get_nostr_text()
                         nostr_new_text = encrypted_dm.cleartext_content
@@ -126,13 +126,13 @@ class NostrMessenger:
         Send a DM from Nostr to Meshtastic
         '''
         sender_pk = PrivateKey() if len(self.nsec) == 0 else PrivateKey.from_nsec(self.nsec)
-        write_info_log(f"New DM sent from: {sender_pk.public_key.bech32()}")
+        write_info_log(f"You sent a DM with your PubKey: {sender_pk.public_key.bech32()}")
 
         recipient = get_public_key(receiver)
 
         if recipient != "":
             #print(f"Sending DM to {recipient.bech32()}\n")
-            write_info_log(f"Sending DM to {recipient.bech32()}")
+            write_info_log(f"DM Sent to :{recipient.bech32()}")
         else:
             raise Exception("Receiver not valid")
 
