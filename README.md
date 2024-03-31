@@ -26,6 +26,12 @@ First of all you have to set up certains options in your Meshtastic Device and i
     * Enable MQTT
     * Enable JSON output
     * Disable Encryption
+   
+# Architecture
+This is one simple example where meshtastic devices with no internet can send post and send/receive DMs from Nostr. Notice at least one meshtastic device in the mesh needs internet connection to forward all the messages to the MQTT Server. And then Nostrastic takes events from Nostr Relay and selected messages from MQTT Server and resend to the opposite direction.
+
+![nostrastic2](https://github.com/QuixoteSystems/nostrastic/assets/82296005/28e760d4-8ffc-441e-9fed-80c18915c2cd)
+
 
 # Start using Nostrastic
 1- Clone or Download this repo.
