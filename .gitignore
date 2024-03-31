@@ -1,0 +1,4 @@
+.env
+.venv
+contacts.json
+nostrastic.log
